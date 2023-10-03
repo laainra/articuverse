@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.circle-button {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background-color: #FFE9E9;
+  border-radius: 50%;
+  padding: 10px;
+}
+.circle-button i {
+  font-size: 40x; /* Adjust the font size as needed */
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #000; /* Adjust the color as needed */
+  margin: 0 10px; /* Adjust the margin to control the spacing */
+}
