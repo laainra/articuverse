@@ -13,13 +13,15 @@ function Hero() {
     color: "white",
     fontSize: "70px",
     fontWeight: "bold",
-    margin: "10px 0 100px 0"
+    margin: "10px 0 100px 0",
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" 
   };
 
   const subTitleStyle = {
     color: "white",
     fontSize: "30px",
-    margin: "100px 0 100px 0"
+    margin: "100px 0 100px 0",
+  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)"
   };
 
   const buttonStyle = {
@@ -41,12 +43,12 @@ function Hero() {
     {
       image: `${process.env.PUBLIC_URL}/image/carousel.jpeg`,
       title: "Join Our Creative Community",
-      subTitle: "Share your own art, connect with fellow artists, and inspire the world",
+      subTitle: "Share your own art, connect with fellow artists, and inspire the world with the arts",
     },
   ];
 
   return (
-    <Carousel style={carouselStyle} interval={5000}>
+    <Carousel style={carouselStyle} interval={5000} controls={false}>
       {carouselData.map((item, index) => (
         <Carousel.Item key={index}>
           <img
@@ -59,7 +61,7 @@ function Hero() {
             <h1 style={titleStyle}>{item.title}</h1>
             <p style={subTitleStyle}>{item.subTitle}</p>
             <div className="d-flex justify-content-center">
-              <Button style={buttonStyle} title="Join Us Now" action={() => {/* Your action here */}} />
+              <Button style={buttonStyle} title="Join Us Now"  />
             </div>
           </Carousel.Caption>
         </Carousel.Item>

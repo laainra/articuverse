@@ -47,9 +47,9 @@ function Login() {
         `}
       </style>
 
-      <MDBContainer fluid className="p-3 my-2 h-custom">
+      <MDBContainer fluid className="p-3 my-2 h-custom d-flex align-items-center justify-content-center ">
         <MDBRow>
-          <MDBCol col="4" md="6">
+          <MDBCol col="4" md="4" className="order-2 order-md-1">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <p className="lead fw-normal mb-0 me-3">LOGIN</p>
             </div>
@@ -129,13 +129,18 @@ function Login() {
               </p>
             </div>
           </MDBCol>
-          <MDBCol col="10" md="6">
-            <img
-              src="./image/login.png"
-              class="img-fluid d-none d-md-block"
-              alt="Sample image"
-            />
-          </MDBCol>
+          <MDBCol col="10" md="6" className="order-1 order-md-2 d-flex ml-5">
+  <img
+    src="./image/login.png"
+    className="mr-auto"
+    width="auto"
+    alt="Sample image"
+  />
+</MDBCol>
+
+
+
+
         </MDBRow>
       </MDBContainer>
       <Footer />

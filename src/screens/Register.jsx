@@ -46,16 +46,16 @@ function Login() {
         `}
       </style>
 
-      <MDBContainer fluid className="p-3 my-2 h-custom">
+      <MDBContainer fluid className="p-3 my-2 h-custom ">
         <MDBRow>
-          <MDBCol col="10" md="6">
+          <MDBCol col="10" md="7" className="d-flex ml-5">
             <img
               src="./image/register.png"
-              class="img-fluid d-none d-md-block"
+              className=" ml-auto"
               alt="Sample image"
             />
           </MDBCol>
-          <MDBCol col="4" md="6">
+          <MDBCol col="4" md="4">
             <div className="d-flex flex-row align-items-center justify-content-center">
               <p className="lead fw-normal mb-0 me-3">REGISTER</p>
             </div>

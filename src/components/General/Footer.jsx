@@ -12,7 +12,7 @@ const Footer = () => {
 const FooterContainer = styled.footer`
   background-color: #FFE9E9;
   color: #000;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
 `;
 
